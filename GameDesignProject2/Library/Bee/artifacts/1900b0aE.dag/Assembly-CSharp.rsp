@@ -356,8 +356,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Jumping_DC.cs"
-"Assets/MovingPlatforms.cs"
+"Assets/Scripts/GameOverManager_DC.cs"
+"Assets/Scripts/GAME_DC.cs"
+"Assets/Scripts/Jumping_DC.cs"
+"Assets/Scripts/MOVEMENT_DC.cs"
+"Assets/Scripts/MovingPlatforms.cs"
 -langversion:9.0
 
 /deterministic
