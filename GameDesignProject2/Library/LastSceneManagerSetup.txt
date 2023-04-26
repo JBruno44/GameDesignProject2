@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/GameOver_DC.unity
+- path: Assets/Scenes/LEVEL1_DC.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
