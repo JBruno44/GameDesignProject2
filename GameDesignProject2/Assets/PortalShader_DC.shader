@@ -2,9 +2,9 @@ Shader "Unlit/Hologram"
 {
     Properties
     {
-        _MainTex("Texture", 2D) = "white" {}
+        _MainTex("Texture", 2D) = "purple" {}
 
-        _TintColor("Tint Color", Color) = (1,1,1,1)
+        _TintColor("Tint Color", Color) = (1,0,1,1)
         _Transparency("Transparency", Range(0.0,0.5)) = 0.25
         _CutoutThresh("Cutout Threshold", Range(0.0,1.0)) = 0.2
         _Distance("Distance", Float) = 1

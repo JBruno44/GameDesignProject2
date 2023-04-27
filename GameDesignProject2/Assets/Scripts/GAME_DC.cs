@@ -44,9 +44,6 @@ public class GAME_DC : MonoBehaviour
         {
             lives = 300;
         }
-
-        Debug.Log(player.transform.position.x);
-        Debug.Log(checkpointArea.transform.position);
         if(player.transform.position.x>checkpointArea.transform.position.x-2.5 && player.transform.position.x<checkpointArea.transform.position.x+2.5)
         {
             checkpointHit = true;
