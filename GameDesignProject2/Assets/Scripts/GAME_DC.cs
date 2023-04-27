@@ -9,20 +9,61 @@ public class GAME_DC : MonoBehaviour
 {
     // Start is called before the first frame update
     public int lives = 3;
+    public string liveKey = "lifeCount";
     public TMP_Text liveCount;
     public GameObject playerPrefab;
     public GameObject player;
     public GameObject checkpointArea;
     public bool checkpointHit = false;
+    public string middleOfGame = "middle";
+
+    public bool inMiddle = false;
     void Start()
     {
         lives = 3;
+        if (PlayerPrefs.HasKey(liveKey))
+        {
+            Debug.Log("LIVES SET");
+            Debug.Log(liveKey);
+            if(PlayerPrefs.GetInt(middleOfGame)==1)
+            {
+                lives = PlayerPrefs.GetInt(liveKey);
+            }
+            else
+            {
+                PlayerPrefs.SetInt(liveKey, lives);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt(liveKey, lives);
+        }
+
+        if (PlayerPrefs.HasKey(middleOfGame))
+        {
+            Debug.Log(middleOfGame);
+        }
+        else
+        {
+            PlayerPrefs.SetInt(middleOfGame, 0);
+        }
+
+        if(PlayerPrefs.GetInt(middleOfGame) !=1)
+        {
+            inMiddle = false;
+        }
+        else
+        {
+            inMiddle = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         liveCount.text = "Lives: " + lives.ToString();
+        inMiddle = true;
+        PlayerPrefs.SetInt(middleOfGame, 1);
 
         if (player.transform.position.y < -4f)
         {
@@ -37,6 +78,7 @@ public class GAME_DC : MonoBehaviour
 
         if (lives < 1)
         {
+            PlayerPrefs.SetInt(middleOfGame, 0);
             SceneManager.LoadScene("GameOver_DC");
         }
 
@@ -49,5 +91,10 @@ public class GAME_DC : MonoBehaviour
             checkpointHit = true;
             Debug.Log("IT WORKS");
         }
+    }
+
+    public void storeLives()
+    {
+        PlayerPrefs.SetInt(liveKey, lives);
     }
 }

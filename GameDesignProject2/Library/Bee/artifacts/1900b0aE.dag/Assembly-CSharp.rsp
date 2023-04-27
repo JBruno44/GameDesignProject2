@@ -361,6 +361,7 @@
 "Assets/Scripts/GameOverManager_DC.cs"
 "Assets/Scripts/GAME_DC.cs"
 "Assets/Scripts/Jumping_DC.cs"
+"Assets/Scripts/LEVEL2_DC.cs"
 "Assets/Scripts/MOVEMENT_DC.cs"
 "Assets/Scripts/MovingPlatforms.cs"
 "Assets/Scripts/PortalGlitch_DC.cs"
