@@ -25,6 +25,7 @@ public class Jumping_DC : MonoBehaviour
         {
             Debug.Log("JUMPED");
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
         }
     }
 
