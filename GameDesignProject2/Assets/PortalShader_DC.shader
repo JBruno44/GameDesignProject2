@@ -71,7 +71,7 @@ Shader "Unlit/Hologram"
                 //UNITY_APPLY_FOG(i.fogCoord, col);
         float c = col.r + col.g + col.b;
         c /= 3;
-        fixed4 n = float4(c,c,c,1);
+        fixed4 n = float4(col.r,0,col.b,1);
         n.a = _Transparency;
                 return n * 1.5;
             }

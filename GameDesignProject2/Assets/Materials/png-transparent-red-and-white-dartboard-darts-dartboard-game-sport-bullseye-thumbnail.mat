@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: png-transparent-red-and-white-dartboard-darts-dartboard-game-sport-bullseye-thumbnail
-  m_Shader: {fileID: 4800000, guid: e911eea4242700e43abf7028ba913b61, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2d5a0640457578140a7b338ed9f38771, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -29,6 +29,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Amount: 1
+    - _Amplitude: 1
+    - _CutoutThresh: 0.2
+    - _Distance: 1
     - _Rotation: 0
-    m_Colors: []
+    - _Speed: 1
+    - _Transparency: 0.25
+    m_Colors:
+    - _TintColor: {r: 1, g: 0, b: 1, a: 1}
   m_BuildTextureStacks: []

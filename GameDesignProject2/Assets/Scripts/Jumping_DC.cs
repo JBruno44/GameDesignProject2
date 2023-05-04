@@ -10,12 +10,14 @@ public class Jumping_DC : MonoBehaviour
     public float jumpForce = 7.0f;
     public bool isGrounded = true;
     public float maxHeight = 50f;
-
+    private AudioSource noise;
+    private bool isPlaying = false;
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        noise = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,16 @@ public class Jumping_DC : MonoBehaviour
         {
             Debug.Log("JUMPED");
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            if(!isPlaying)
+            {
+                isPlaying = true;
+            }
+        }
+        if(isPlaying)
+        {
+            noise.Play();
+            Debug.Log("It works");
+            isPlaying = false;
         }
     }
 
