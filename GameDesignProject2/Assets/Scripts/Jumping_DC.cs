@@ -27,9 +27,8 @@ public class Jumping_DC : MonoBehaviour
         {
             Debug.Log("JUMPED");
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-<<<<<<< HEAD
             isGrounded = false;
-=======
+
             if(!isPlaying)
             {
                 isPlaying = true;
@@ -40,7 +39,7 @@ public class Jumping_DC : MonoBehaviour
             noise.Play();
             Debug.Log("It works");
             isPlaying = false;
->>>>>>> main
+
         }
     }
 
