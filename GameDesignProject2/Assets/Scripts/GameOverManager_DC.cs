@@ -16,6 +16,7 @@ public class GameOverManager_DC : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            PlayerPrefs.SetInt("middle", 0);
             SceneManager.LoadScene("LEVEL1_DC");
         }
     }
