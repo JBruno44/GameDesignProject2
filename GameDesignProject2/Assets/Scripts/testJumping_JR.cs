@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class testJumping_JR : MonoBehaviour
 {
-    public float jumpForce = 5f; // The force of the jump
+    public float jumpForce = 5f;
     public float jumpAcceleration = 3.0f;
     public float jumpDeceleration = 3.0f;
     public float maxJumpTime = .5f;
@@ -20,7 +20,7 @@ public class testJumping_JR : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             jumpTime = 0.0f;
             rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);

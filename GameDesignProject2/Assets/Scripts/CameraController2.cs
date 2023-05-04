@@ -22,5 +22,7 @@ public class CameraController2 : MonoBehaviour
         currentRotation += Input.GetAxis("Mouse X") * cameraRotationSpeed;
         Quaternion cameraRotation = Quaternion.Euler(25f, currentRotation, 0.0f);
         transform.rotation = cameraRotation;
+
+
     }
 }
