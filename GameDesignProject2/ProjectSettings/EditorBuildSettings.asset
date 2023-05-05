@@ -12,6 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver_DC.unity
     guid: b9d299450c1f4bb468208a1f78947e66
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Level2.unity
     guid: 214761a7106d0334b97e39437d74b6b9
+=======
+    path: Assets/Scenes/splash.unity
+    guid: 91440936916194660b7f3fbfae3b6acb
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: c5fd014f1dfd34753bc880a2f74b8152
+>>>>>>> 34b76ec0838108ae4dd030605b7a08cca6e26a9d
   m_configObjects: {}
