@@ -366,6 +366,8 @@
 "Assets/Scripts/MovingPlatforms.cs"
 "Assets/Scripts/MovingPlatforms1.cs"
 "Assets/Scripts/PortalGlitch_DC.cs"
+"Assets/Scripts/ReachEndLvl3.cs"
+"Assets/Scripts/Splash.cs"
 -langversion:9.0
 
 /deterministic
