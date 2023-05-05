@@ -6,7 +6,7 @@ public class CameraController2 : MonoBehaviour
 {
     public Transform playerTransform;
     public float cameraDistance = 4.0f;
-    public float cameraHeight = 3.0f;
+    public float cameraHeight = 2.0f;
     public float cameraRotationSpeed = 1.0f;
 
     private float currentRotation = 0.0f;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class testMovementJR : MonoBehaviour
 {
     public Camera playerCamera;
@@ -82,5 +83,6 @@ public class testMovementJR : MonoBehaviour
 
         transform.position += movementDirection * moveSpeed * Time.deltaTime;
     }
+
 }
 
